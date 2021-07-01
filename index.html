@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+	<html lang="es">
+
+	<head>
+		<!-- link al archivo css -->
+		<link rel="stylesheet" type="text/css" href="Css/style.css">
+		<!-- link a las fuentes de google -->
+		<link rel="preconnect" href="https://fonts.gstatic.com">
+		<link href="https://fonts.googleapis.com/css2?family=Odibee+Sans&display=swap" rel="stylesheet">
+		<!-- link a iconos (W3School) -->
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Pelis y series</title>
+	</head>
+
+	<body>
+
+	<!-- Etiqueta para lo usado en css -->
+	<header class="cabeza">
+		<h1 class="cabeza__titulo">BIENVENIDOS</h1>
+
+		<nav>
+			<ul class="listaNav">			<!--Lista indexada a los otros html-->
+				<a href="index.html" class="activo"><li>Inicio</li></a>
+				<a href="top10.html"><li>Top 10 peliculas</li></a>
+				<a href="trailers.html"><li>Trailers</li></a>
+				<a href="contacto.html"><li>Contacto</li></a>
+				<a href="recomendacion.html"><li>Recomendacion</li></a>
+				<input type="text" placeholder="Buscar">
+			</ul>
+		</nav>		
+	</header>
+
+	<main>	
+
+		<h2>Aqui una breve tabla sobre algunas peliculas</h2>
+
+		<!-- Comienzo de tabla -->
+		<table class="tabla" width="80%" border="1" cellpadding="1" cellspacing="0">  <!-- Agrego borde y espacios entre celdas ademas de modificar tamaño -->
+  			<tr>
+				<th>Peliculas</th>
+				<th>Año</th>
+				<th>Donde ver</th>
+				<th>Datos</th>
+				<th>Valoracion</th>
+  			</tr>
+
+ 			<tr>
+					<td>Soul</td>
+					<td>11-10-2020</td>
+					<td>Disney +</td>
+					<td>
+    			<ul>
+					<li>De Pixar</li>
+					<li>Comedia</li>
+					<li>Animada</li>
+					<li>Duracion:100 min</li>
+    			</ul>
+    				</td>
+    				<td>&#9733&#9733&#9733&#9734&#9734</td>   <!-- Estrellas -->
+  			</tr>
+
+  			<tr>
+					<td>Batman:The Dark Knight</td>
+					<td>14-07-2008</td>
+					<td>Netflix</td>
+					<td>
+  				<ul>
+					<li>Legendary Pictures</li>
+					<li>Accion</li>
+					<li>Drama</li>
+					<li>Duracion:152 min</li>
+    			</ul>
+    				</td>
+  					<td>&#9733&#9733&#9733&#9733&#9733</td> 	 <!-- Estrellas -->
+		</table> <!-- Finaliza la tabla -->
+	</main>
+
+	<footer class="pie">
+	
+		<h4 class="subtitulo2">Nuestras redes</h4>
+
+		<!-- Input de tipo imagen, al presionar la imagen deberia llevarnos a la red -->
+		<!-- <input type="image"  src="Imagen/facebook.jpg" alt="logo facebook" name="imagen" value="Redes" class="face"> <br> -->
+		<!-- <input type="image"  src="Imagen/instagram.jpg" alt="logo instagram" name="imagen2" value="Redes" class="face">  -->
+		<i class="fa fa-facebook"><b><a href="#"> Facebook</a></b> </i><br>
+		<i class="fa fa-instagram"><a href="#"><b> Instagram</b></a></i>
+		
+	</footer>
+
+	</body>
+
+	</html>	
