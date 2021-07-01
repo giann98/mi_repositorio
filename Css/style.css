@@ -1,0 +1,158 @@
+*{
+	margin: 4px 2px 2px 2px;
+}
+.cabeza{    /*Esta en el Header */
+	background-color: rgb(7, 7, 7);
+}
+.cabeza__titulo{		/*Clase para los titulos de todos los html*/
+	text-align: center; 
+	color: white;		
+	background-size: 15em;		
+	background-color: black;	
+	border: 10px solid red;		
+	font-family: "Odibee Sans";  	/*Fuente de google fonts*/
+}
+
+.bordeRedondeado{     /*Aca hago una clase sobre bordes redondeados*/
+	border-radius: 10px;	/*Este es el radio para que sea redondo el borde, a mayor px mas grande radio*/
+	color: white;		
+	background-color: black;
+}
+/* UTILIZACION DE GRID EN EL NAV A LOS ENLACES A LAS OTRAS PAGINAS */
+.listaNav{
+	display: grid; 
+	grid-template-areas: "Inicio Top 10 Trailers Contacto Recomendacion Buscar";
+	grid-template-columns: 5em 10em 7em 7em 9em 16em; 
+	grid-template-rows: 4em;
+	grid-column-gap: 5em;
+	list-style-type: none;
+	background-color: rgb(8, 8, 8);
+	overflow: hidden;
+	border: 10px solid red;
+  }
+  
+.listaNav a {
+	color: #f2f2f2;
+	text-align: center;
+	padding: 0.5em 0.5em;
+	text-decoration: none;
+	font-size: 22px;
+	font-family: "Odibee Sans";
+  }
+
+.listaNav a:hover {   /* Utilizacion de gradiente */
+	background-image: linear-gradient(to left, grey , #ddd);
+	color: black;
+  }
+
+
+.listaNav a.activo {   /* Utilizacion de gradiente */
+	background-image: linear-gradient(to right, rgb(126, 123, 123), #9b9898 );
+	color: black;
+  }
+
+.listaNav input[type=text]{
+	padding: 6px;
+	border: none;
+	margin-top: 8px;
+	margin-right: 8px;
+	font-size: 17px;
+	border: 2px solid red;
+	transition: all 2s;    /* utilizacion transition */
+  }
+   /* utilizacion transition */
+  .listaNav input[type=text]:focus{
+	font-size: 25px;
+	background-color: #cac7c7;
+  }
+ 
+.background{				
+	background-color:#FEF185;
+}
+
+.subtitulo{			/*Clase para subtitulos*/
+	text-align: center;    
+	font-family: courier;	
+	font:bold;			
+	text-decoration: underline;	
+}
+
+/* UTILIZACIO DE FLEXBOX */
+fieldset {				/*etiqueta a un fieldset*/
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  width: 30em;
+  height: 50em;
+  justify-content: space-evenly;
+  padding: 0.35em 0.625em 0.75em 0.075em;
+  border: 2px solid red ; /*borde tamaño y color abajo*/
+  background-color: #8f8f8f77; 	
+}
+fieldset legend{      /*etiqueta a una leyenda dentro del fieldset*/
+	font-style: italic;    
+	text-align: center;	
+	text-decoration: underline;	
+}
+/* Utilizacion de transformacion */
+.valoracion{
+	transform: scale(1,1.4)
+}
+
+.tabla{
+	background-color: black;
+	border: 2px solid red;
+	color: white;	
+}
+.subtitulo2{			/*Clase para subtitulos*/
+	text-align: left;    
+	font-family: italic;	
+	font:bold;				
+	text-decoration: underline;	
+	background-color: black;  
+	color: white;			
+	border: 5px solid red;
+	background-size: 20px;
+	width: 12em;
+}
+.subtitulo3{			/*Clase para subtitulos*/
+	text-align: left;    
+	font-family: italic;	
+	font:bold;				
+	text-decoration: underline;	
+	background-color: black; 
+	color: white;			
+	border: 5px solid red;	
+	background-size: 20px;	
+	width: 15em;
+}
+/* 
+#transfo1{
+	transform: translate(40em,-43.5em);
+}
+#transfo2{
+	transform: translate(40em,-43.5em);
+}
+ */
+
+.listaDef__reco{      /* Utilizacion de flex */
+	text-decoration: underline;	
+	background-color: black; 
+	width: 20em;
+	color: white;			
+	border: 5px solid red;	
+	display: flex;
+	flex-flow: column;
+}
+
+.fraseDef__texto {
+    /* margin-bottom: 20px; */
+    font-size: 16px;
+    font-weight: 100;
+	margin-right: 50em;
+	text-align: left;
+}
+
+
+
+
